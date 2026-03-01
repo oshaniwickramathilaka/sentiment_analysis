@@ -1,0 +1,67 @@
+/* main.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;      /* left and right side by side */
+    height: 100vh;
+}
+
+.split {
+    flex: 1;            /* each side takes half the width */
+    padding: 20px;
+}
+
+.left {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;              /* takes half the space */
+    max-width: 50%;       /* prevent it from expanding too much */
+}
+
+.left img {
+    max-width: 100%;
+    max-height: 100%;     /* ensures it won’t stretch beyond left div */
+    object-fit: contain;
+}
+
+.right {
+    background-color: #ffffff;   /* right half background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     /* vertical center content */
+}
+/* Textarea Styling */
+/* Textarea Styling */
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 14px;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #007bff;
+}
+
+/* Comment container */
+.comment-bottom {
+    margin-top: 20px;
+}
+
+/* Each comment block */
+.commented-section {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 6px;
+}
